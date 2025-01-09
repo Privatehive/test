@@ -1,0 +1,13 @@
+name: test
+on: [push]
+jobs:
+  FirstJob:
+    runs-on: self-hosted
+    name: "FirstJob"
+    steps:
+      - run: echo "Hello from VM one"; sleep 120
+  #SecondJob:
+  #  runs-on: self-hosted
+  #  name: "SecondJob"
+  #  steps:
+  #    - run: echo "Hello from VM two"; sleep 120
