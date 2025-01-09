@@ -3,6 +3,7 @@ on: [push, pull_request]
 jobs:
   FirstJob:
     runs-on: self-hosted
+    environment: test
     name: "FirstJob"
     steps:
       - run: echo "Hello from VM one"; sleep 120
